@@ -1,11 +1,11 @@
-import { ActorCard } from './components/ActorCard.jsx'
+import  MovieMain  from './components/MovieMain'
 import './App.css'
 
 function App() {
 
   return (
     <div className='App'>
-      <ActorCard />
+      <MovieMain/>
     </div>
   )
 }
