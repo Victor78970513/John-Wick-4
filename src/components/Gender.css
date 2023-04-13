@@ -1,0 +1,5 @@
+.gender-container {
+  padding: 20px 48px;
+  display: flex;
+  justify-content: space-evenly;
+}
