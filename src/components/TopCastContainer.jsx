@@ -1,9 +1,10 @@
 import React from 'react'
 import { ActorCard } from './ActorCard'
-import actors from '../assets/actor.json'
+// import actors from '../assets/actor.json'
 import './TopCastContainer.css'
 
-export const TopCastContainer = () => {
+export const TopCastContainer = ({pelis}) => {
+  const actors = pelis.Actors ? pelis.Actors.split(", ") : [];
   return (
     <section className='top-cast-container'>
         <h6>Top Cast</h6>

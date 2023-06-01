@@ -1,0 +1,23 @@
+.search{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+    height: 47px;
+    border: 1px solid #6A536A;
+    border-radius: 26px;
+}
+.info{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 17px;
+    align-items: center;
+    margin-right: 100px;
+    color: #6A536A;
+}
+.icon-search{
+    font-size: 30px;
+    margin-right: 30px;
+}
