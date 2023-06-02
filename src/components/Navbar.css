@@ -1,0 +1,15 @@
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #6A536A;
+    width: 100%;
+    height: 75px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    align-items: center;
+}
+.navbar-icon{
+    color: white;
+    font-size: 25px;
+}

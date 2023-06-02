@@ -1,20 +1,31 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { ActorCard } from './ActorCard'
-// import actors from '../assets/actor.json'
 import './TopCastContainer.css'
+import { useState } from 'react';
+import { getActorsMovie } from '../services/movies';
+import { BookingButton } from './BookingButton';
 
-export const TopCastContainer = ({pelis}) => {
-  const actors = pelis.Actors ? pelis.Actors.split(", ") : [];
+export const TopCastContainer = ({pelicula}) => {
+  const [actores, setActores] = useState([]);
+  useEffect(() => {
+    const actoresPeli = async () =>{
+      const data = await getActorsMovie(pelicula)
+      setActores(data.cast)
+    };
+    actoresPeli();
+  }, []);
+  console.log(`TOPCASTCONTAINER: ${pelicula}`)
   return (
     <section className='top-cast-container'>
         <h6>Top Cast</h6>
         <div className='cards-container'>
           {
-            actors.map((actor)=>{
-              return (<ActorCard actor={actor} key={actor.id} />)    
+            actores.map((actor,index)=>{
+              return (<ActorCard actorImage={actor.profile_path} key={index}/>)    
             })
           }
         </div>
+        <BookingButton/>
     </section>
   )
 }

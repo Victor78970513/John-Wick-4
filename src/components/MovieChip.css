@@ -1,0 +1,11 @@
+.chip-movie{
+    height: 121px;
+    width: 96px;
+    border-radius: 20px;
+    margin-right: 30px;
+}
+.chip-movie img{
+    height: 121px;
+    width: 96px;
+    border-radius: 20px;
+}

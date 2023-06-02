@@ -1,12 +1,12 @@
 import React from 'react'
 import './ActorCard.css'
 
-export const ActorCard = (props) => {
-  const actor = props.actor
+export const ActorCard = ({actorImage}) => {
+  const image = `https://image.tmdb.org/t/p/w500${actorImage}`
   return (
     <div className='actor-container'>
-      <img src={actor.imgsrc} alt="" />
-      <span>{actor.name}</span>
+      <img src={image} alt="" />
+      {/* <span>{actor.name}</span> */}
     </div>
   )
 }

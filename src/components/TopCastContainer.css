@@ -1,4 +1,7 @@
-
+.top-cast-container{
+    margin: 0;
+    padding: 0;
+}
 .top-cast-container h6{
     height: 14px;
     font-weight: 700;
@@ -8,5 +11,10 @@
 
 .cards-container{
     display: flex;
-    justify-content: space-around;
+    width: 300px;
+    margin-left: 30px;
+    overflow-x: scroll;
+}
+.cards-container::-webkit-scrollbar{
+    display: none;
 }

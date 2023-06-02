@@ -2,11 +2,11 @@
 import React from 'react'
 import './Chip.css'
 
-export const Chip = ({genero}) => {
+export const Chip = ({nombregenero}) => {
   return (
     <div className='chip'>
         {
-          genero
+          nombregenero
         }
     </div>
   )
