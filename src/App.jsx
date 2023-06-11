@@ -9,6 +9,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/movie" element={<MovieDetails />} />
+        <Route path="*" element={<p>NOT FOUND</p>}/>
       </Routes>
     </BrowserRouter>
   );
