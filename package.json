@@ -1,15 +1,14 @@
 {
   "name": "jonwick4",
-  "homepage":"https://Victor78970513.github.io/jonwick4",
+  "homepage":"https://Victor78970513.github.io/John-Wick-4",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
