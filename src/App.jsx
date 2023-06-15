@@ -6,12 +6,19 @@ import MovieDetails from "./screens/MovieDetails";
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/movie" element={<MovieDetails />} />
-        <Route path="*" element={<p>NOT FOUND</p>}/>
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route exact path="https://victor78970513.github.io/John-Wick-4/" element={<Home />} />
+      <Route path="https://victor78970513.github.io/John-Wick-4//movie" element={<MovieDetails />} />
+      <Route path="*" element={<p>NOT FOUND</p>}/>
+    </Routes>
+  </BrowserRouter>
+    // <BrowserRouter>
+    //   <Routes>
+    //     <Route exact path="/" element={<Home />} />
+    //     <Route path="/movie" element={<MovieDetails />} />
+    //     <Route path="*" element={<p>NOT FOUND</p>}/>
+    //   </Routes>
+    // </BrowserRouter>
   );
 }
 

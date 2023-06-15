@@ -28,7 +28,7 @@ const SeccionMovie = ({endponit,endpoint2, title}) => {
               // console.log(movie.id);
               // console.log(movie.poster_path);
               // console.log(movie.overview);
-              handleClick(`/movie?imagen=${movie.poster_path}&descripcion=${movie.overview}&actores=${movie.cast}&id=${movie.id}`)
+              handleClick(`https://victor78970513.github.io/John-Wick-4/movie?imagen=${movie.poster_path}&descripcion=${movie.overview}&actores=${movie.cast}&id=${movie.id}`)
             }}>
               <MovieChip key={movie.id} imagen={movie.poster_path}/>
             </div>
